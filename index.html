@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja Incrível</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+  <header>
+    <img src="./assets/logo/logo.png" alt="">
+    <a href="carrinho.html" class="ver-carrinho-btn">🛒 Ver Carrinho</a>
+    <button id="modo-noturno">Modo Noturno</button>
+  </header>
+
+  
+  <div class="carousel-container">
+    <div class="carousel" id="carousel">
+      <div class="slide active">
+        <img src="./assets/img/cdz (1).png" alt="Promoção 1">
+        <div class="texto">Descontos Imperdíveis!</div>
+      </div>
+      <div class="slide">
+        <img src="./assets/img/dragonball (2).png" alt="Promoção 2">
+        <div class="texto">Lançamentos Incríveis!</div>
+      </div>
+      <div class="slide">
+        <img src="./assets/img/hakusho.png" alt="Promoção 3">
+        <div class="texto">Frete Grátis!</div>
+      </div>
+    </div>
+    <button class="prev" onclick="mudarSlide(-1)">❮</button>
+    <button class="next" onclick="mudarSlide(1)">❯</button>
+  </div>
+  
+  <form id="form">
+    <input type="text" id="busca" placeholder="o que procura?" oninput="procura()">
+    <select id="produtosSel" onchange="procura()">
+      <option value="">Todos</option>
+      <option value="acessorios">acessórios</option>
+      <option value="vestuario">vestuário</option>
+    </select>
+  </form>
+  
+  <main>
+    <h2>Produtos</h2>
+    <div id="lista-produtos" class="produtos-container"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 Leandro Santos | 
+      <a href="https://github.com/leandrowork03" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/leandro-santos-front-end/" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
