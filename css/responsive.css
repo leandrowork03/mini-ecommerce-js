@@ -1,0 +1,51 @@
+@media(max-width: 1000px){
+    header{
+        padding: 0 3%;
+        height: 200;
+    }
+    header img{
+        width: 150px;
+    }
+    .carousel-container{
+        height: 170px;
+    }
+    .prev, .next{
+        top: 20%;
+    }
+    .texto{
+        font-size: 10px;
+        width: 200px;
+        left: 40%;
+        bottom: 5px;
+    }
+    .ver-carrinho-btn, #modo-noturno {
+       margin-left: 10px;
+        text-decoration:underline;
+        color: white;
+        padding: 0;
+        font-weight: bold;
+        font-size: 13px;
+        border: none;
+        background-color:#6A5ACD;
+      }
+      
+}
+
+@media(max-width: 420px){
+    .produto{
+        width: 250px;
+    }
+    .produto img{
+        width: 60px;
+    }
+    .produto button{
+        padding: 2px;
+        font: x-small;
+        font-size: small;
+    }
+    #adicionar-carrinho{
+        padding: 2px;
+        font: x-small;
+        font-size: small;  
+    }
+}
